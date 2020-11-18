@@ -1,5 +1,12 @@
 # coding=utf-8
-# 利用类似冒泡算法中两两比较的原理，将临近的UV点坐标合并
+
+# Introduction: Using the theroy of Bubble Sort like method to compare UV points one by one,
+#       and merge close UV points and then move their pos to the 1st point's (not actually merged). 
+
+# Notice: I will shortly add a GUI to this tool.
+
+# Warning: Due to the flaw of Maya memory management, when close loop has been executed
+#       there would be a serious memory leak, be sure not to use on massive uv points.
 
 import maya.cmds as cmds
 import pymel.core as pc
